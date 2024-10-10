@@ -66,7 +66,7 @@ class Triangle(Figure):
     def __init__(self, color, *sides, filled=False):
         sides1 = []
         if len(sides) == 3:
-            sides1 = sides
+            sides1 = list(sides)
         else:
             for i in range(0, 3):
                 sides1.append(1)
